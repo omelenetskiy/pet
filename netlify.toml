@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/*"
+  to = "/public/index.html"
+  status = 200
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[plugins.inputs.thresholds]
+  performance = 0.1
+  accessibility = 0.1
+  best-practices = 0.1
+  seo = 0.1
+  pwa = 0.1
